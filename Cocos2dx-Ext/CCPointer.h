@@ -25,6 +25,8 @@ THE SOFTWARE.
 
 #include "ccMacros.h"
 
+NS_CC_BEGIN
+
 template<typename T>
 class CCReleaser
 {
@@ -180,6 +182,34 @@ private:
 	template <typename U>
 	friend class CCPointer;
 };
+
+NS_CC_END
+
+#define CC_PROPERTY_READONLY_RETAIN_EXT(varType, varName, funName) \
+protected: \
+	cocos2d::CCPointer<varType> varName; \
+public: \
+	virtual varType* get##funName() const;
+
+#define CC_PROPERTY_RETAIN_EXT(varType, varName, funName) \
+protected: \
+	cocos2d::CCPointer<varType> varName; \
+public: \
+	virtual varType* get##funName(); \
+	virtual void set##funName(varType* var);
+
+#define CC_SYNTHESIZE_READONLY_RETAIN_EXT(varType, varName, funName) \
+protected: \
+	cocos2d::CCPointer<varType> varName; \
+public: \
+	virtual varType* get##funName() const { return varName; }
+
+#define CC_SYNTHESIZE_RETAIN_EXT(varType, varName, funName) \
+protected: \
+	cocos2d::CCPointer<varType> varName; \
+public: \
+	virtual varType* get##funName() const { return varName; } \
+	virtual void set##funName(varType* var) { varName = var; }
 
 #endif /* CCPOINTER_H_ */
 
