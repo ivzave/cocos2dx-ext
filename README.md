@@ -30,14 +30,14 @@ Note
 
 CCPointer assumes an object passed to it needs to be retained. It's ok to init CCPointer with autorelease() objects directly.
 
-   CCPointer<CCSprite> pSprite(CCSprite::create[...]); // OK
+```CCPointer<CCSprite> pSprite(CCSprite::create[...]); // OK```
 
 Whenever you need to pass an object that doesn't need to be retained (e.g. created with "new" operator) you should release it manually after creating CCPointer OR use provided helper function:
 
-   CCPointer<CCSprite> pSprite(new CCSprite());
-   pSprite->release(); // this way
+```CCPointer<CCSprite> pSprite(new CCSprite());
+pSprite->release(); // this way```
    
-   CCPointer<CCSprite> pSprite(CCReleaseMake(new CCSprite())); // or this way
+```CCPointer<CCSprite> pSprite(CCReleaseMake(new CCSprite())); // or this way```
    
 Contact
 ---------------
