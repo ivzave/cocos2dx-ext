@@ -19,9 +19,9 @@ How to use
 You can use CCPointer just as ordinary C++ pointers - it supports all the operations supported by ordinary pointers.
 
 Instead of
-   CCType* pObj;
+```CCType* pObj;```
 you should write
-   CCPointer<CCType> pObj;
+```CCPointer<CCType> pObj;```
 
 You can create local pointers or class members this way. You can pass them to functions accepting CCPointer or ordinary pointer (by value or by reference). Wrapped object will be retained whenever you create or copy CCPointer pointing to it and released each time a CCPointer gets destroyed or reassigned with another pointer. So the wrapped object will be kept alive as long as exists at least one CCPointer pointing to it.
 
