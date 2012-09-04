@@ -70,15 +70,15 @@ public:
 		CC_SAFE_RETAIN(m_pObject);
 	}
 
-	CCPointer(const CCPointer& tProperty) :
-		m_pObject(tProperty.m_pObject)
+	CCPointer(const CCPointer& tPointer) :
+		m_pObject(tPointer.m_pObject)
 	{
 		CC_SAFE_RETAIN(m_pObject);
 	}
 
 	template<typename U>
-	CCPointer(const CCPointer<U>& tProperty) :
-		m_pObject(tProperty.m_pObject)
+	CCPointer(const CCPointer<U>& tPointer) :
+		m_pObject(tPointer.m_pObject)
 	{
 		CC_SAFE_RETAIN(m_pObject);
 	}
@@ -113,24 +113,24 @@ public:
 		return *this;
 	}
 
-	CCPointer& operator=(const CCPointer& tProperty)
+	CCPointer& operator=(const CCPointer& tPointer)
 	{
-		if (m_pObject != tProperty.m_pObject)
+		if (m_pObject != tPointer.m_pObject)
 		{
 			CC_SAFE_RELEASE(m_pObject);
-			m_pObject = tProperty.m_pObject;
+			m_pObject = tPointer.m_pObject;
 			CC_SAFE_RETAIN(m_pObject);
 		}
 		return *this;
 	}
 
 	template<typename U>
-	CCPointer& operator=(const CCPointer<U>& tProperty)
+	CCPointer& operator=(const CCPointer<U>& tPointer)
 	{
-		if (m_pObject != tProperty.m_pObject)
+		if (m_pObject != tPointer.m_pObject)
 		{
 			CC_SAFE_RELEASE(m_pObject);
-			m_pObject = tProperty.m_pObject;
+			m_pObject = tPointer.m_pObject;
 			CC_SAFE_RETAIN(m_pObject);
 		}
 		return *this;
