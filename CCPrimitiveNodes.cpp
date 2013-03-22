@@ -9,7 +9,7 @@ USING_NS_CC;
 
 CCRectNode* CCRectNode::createWithSize(const CCSize& tSize, const ccColor4F& tColor, bool bFill)
 {
-	return createWithRect(ccRectMakeWithPointAndSize(CCPointZero, tSize), tColor, bFill);
+	return createWithRect(CCRectMakeWithOriginAndSize(CCPointZero, tSize), tColor, bFill);
 }
 
 CCRectNode* CCRectNode::createWithRect(const CCRect& tRect, const ccColor4F& tColor, bool bFill)
@@ -42,13 +42,13 @@ void CCRectNode::draw()
 
 	if (m_bFill)
     {
-    	ccDrawSolidRect(CCPointZero, ccPointFromSize(tContentSize), ccc4FFromccc3B(getColor()));
+    	ccDrawSolidRect(CCPointZero, ccpFromSize(tContentSize), ccc4FFromccc3B(getColor()));
     }
     else
     {
     	const ccColor3B& tColor(getColor());
     	ccDrawColor4B(tColor.r, tColor.g, tColor.b, getOpacity());
-    	ccDrawRect(CCPointZero, ccPointFromSize(tContentSize));
+    	ccDrawRect(CCPointZero, ccpFromSize(tContentSize));
     }
 }
 
@@ -62,7 +62,7 @@ CCLineNode* CCLineNode::createWithPoints(const CCPoint& tBeginPoint, const CCPoi
 bool CCLineNode::initWithPoints(const CCPoint& tBeginPoint, const CCPoint& tEndPoint, const ccColor4F& tColor)
 {
 	setPosition(tBeginPoint);
-	setContentSize(ccPointDiff(tBeginPoint, tEndPoint));
+	setContentSize(ccpDiff(tEndPoint, tBeginPoint));
 	setColor(ccc3(tColor.r * 255, tColor.b * 255, tColor.g * 255));
 
 	return true;
@@ -72,7 +72,7 @@ void CCLineNode::draw()
 {
 	const ccColor3B& tColor(getColor());
 	ccDrawColor4B(tColor.r, tColor.g, tColor.b, getOpacity());
-	ccDrawLine(CCPointZero, ccPointFromSize(getContentSize()));
+	ccDrawLine(CCPointZero, ccpFromSize(getContentSize()));
 }
 
 
