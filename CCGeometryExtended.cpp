@@ -76,11 +76,6 @@ CCSize cczDenormalizeTo(const CCSize& tSize, const CCSize& tNorm)
 	return ccz(tSize.width * tNorm.width, tSize.height * tNorm.height);
 }
 
-CCSize ccSizeDenormalizeInterval(const CCSize& tSize, const CCSize& tNorm1, const CCSize& tNorm2)
-{
-	return cczAdd(tNorm1, cczDenormalizeTo(tSize, cczSub(tNorm2, tNorm1)));
-}
-
 CCSize cczClamp(const CCSize& tSize, const CCSize& tLimit1, const CCSize& tLimit2)
 {
 	return ccz(clampf(tSize.width, tLimit1.width, tLimit2.width), clampf(tSize.height, tLimit1.height, tLimit2.height));

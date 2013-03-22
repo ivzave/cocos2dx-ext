@@ -68,8 +68,6 @@ CCSize cczNormalizeTo(const CCSize& tSize, const CCSize& tNorm);
 /** Return vector normalized to given vector */
 CCSize cczDenormalizeTo(const CCSize& tSize, const CCSize& tNorm);
 
-CCSize ccSizeDenormalizeInterval(const CCSize& tSize, const CCSize& tNorm1, const CCSize& tNorm2);
-
 /** Clamp vector between two vectors */
 CCSize cczClamp(const CCSize& tSize, const CCSize& tLimit1, const CCSize& tLimit2);
 
