@@ -61,17 +61,19 @@ bool CCRectNode::initWithRect(const CCRect& tRect, const ccColor4F& tColor, bool
 void CCRectNode::draw()
 {
 	const ccColor3B& tColor(getColor());
+	CCPoint tOrigin(isIgnoreAnchorPointForPosition() ? CCPointZero : getAnchorPointInPoints());
+	CCPoint tDestination(ccpShift(tOrigin, getContentSize()));
 
 	if (m_bFill)
     {
-		ccColor4F& tColor4F(ccc4FFromccc3B(tColor));
+		ccColor4F tColor4F(ccc4FFromccc3B(tColor));
 		tColor4F.a = getOpacity() / 255.0f;
-    	ccDrawSolidRect(CCPointZero, ccpFromSize(getContentSize()), tColor4F);
+    	ccDrawSolidRect(tOrigin, tDestination, tColor4F);
     }
     else
     {
     	ccDrawColor4B(tColor.r, tColor.g, tColor.b, getOpacity());
-    	ccDrawRect(CCPointZero, ccpFromSize(getContentSize()));
+    	ccDrawRect(tOrigin, tDestination);
     }
 }
 
@@ -96,7 +98,8 @@ void CCLineNode::draw()
 {
 	const ccColor3B& tColor(getColor());
 	ccDrawColor4B(tColor.r, tColor.g, tColor.b, getOpacity());
-	ccDrawLine(CCPointZero, ccpFromSize(getContentSize()));
+	CCPoint tOrigin(isIgnoreAnchorPointForPosition() ? CCPointZero : getAnchorPointInPoints());
+	ccDrawLine(tOrigin, ccpShift(tOrigin, getContentSize()));
 }
 
 
