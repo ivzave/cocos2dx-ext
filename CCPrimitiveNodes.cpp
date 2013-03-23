@@ -77,6 +77,8 @@ void CCRectNode::draw()
     }
 }
 
+//
+
 CCLineNode* CCLineNode::createWithPoints(const CCPoint& tBeginPoint, const CCPoint& tEndPoint, const ccColor4F& tColor)
 {
 	CCLineNode* pRet = new CCLineNode();
@@ -102,6 +104,7 @@ void CCLineNode::draw()
 	ccDrawLine(tOrigin, ccpShift(tOrigin, getContentSize()));
 }
 
+//
 
 CCDotNode* CCDotNode::createWithPoint(const CCPoint& tPoint, const ccColor4F& tColor)
 {
