@@ -455,8 +455,16 @@ void CCRepeatDuration::stop()
 
 void CCRepeatDuration::update(float fTime)
 {
-	float fTimes = getDuration() / m_pAction->getDuration();
-	m_pAction->update(fTime * fTimes - (int)(fTime * fTimes));
+	float fDuration = m_pAction->getDuration();
+	if (fDuration > 0.0f)
+	{
+		float fTimes = getDuration() / fDuration;
+		m_pAction->update(fTime * fTimes - (int)(fTime * fTimes));
+	}
+	else
+	{
+		m_pAction->update(1.0f); // value ignored
+	}
 	m_fStage = fTime;
 }
 
