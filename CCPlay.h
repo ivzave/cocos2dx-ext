@@ -29,14 +29,15 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
-/** Action which plays a sound effect using SimpleAudioEngine. Is a CCActionInstant because there's no way to get effect duration */
+/** Instant action which plays a sound effect using SimpleAudioEngine.
+ *  Is a CCActionInstant because there's no way to get effect duration. */
 
 class CCPlay : public CCActionInstant
 {
 public:
-	static CCPlay* create(const std::string& tSample);
+	static CCPlay* create(const char* pSample);
 
-	bool init(const std::string& tSample);
+	bool init(const char* pSample);
 
 	virtual CCObject* copyWithZone(CCZone* pZone);
 	virtual void startWithTarget(CCNode* pTarget);

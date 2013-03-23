@@ -30,16 +30,16 @@ THE SOFTWARE.
 USING_NS_CC;
 USING_NS_CD;
 
-CCPlay* CCPlay::create(const std::string& tSample)
+CCPlay* CCPlay::create(const char* pSample)
 {
 	CCPlay* pRet = new CCPlay();
 
-	return pRet->init(tSample) ? (CCPlay*)pRet->autorelease() : (delete pRet, pRet = NULL);
+	return pRet->init(pSample) ? (CCPlay*)pRet->autorelease() : (delete pRet, pRet = NULL);
 }
 
-bool CCPlay::init(const std::string& tSample)
+bool CCPlay::init(const char* pSample)
 {
-	m_tSample = tSample;
+	m_tSample = pSample;
 	return true;
 }
 
