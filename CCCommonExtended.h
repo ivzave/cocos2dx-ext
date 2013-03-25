@@ -62,11 +62,13 @@ if (!(cond)) \
 	CC_ASSERT(false); \
 }
 
-/** Unconditional failure in DEBUG, break in RELEASE. Use in do...while(false) loops */
+/** Unconditional failure in DEBUG, break in RELEASE.
+ *  Should be used in do...while(false) loops. */
 
 #define CCUnreachableWithBreak() CCUnreachableWithBreakCustom("%s", "error")
 
-/** Unconditional failure with custom formatted message in DEBUG, break in RELEASE. Use in do...while(false) loops */
+/** Unconditional failure with custom formatted message in DEBUG, break in RELEASE.
+ *  Should be used in do...while(false) loops. */
 
 #define CCUnreachableWithBreakCustom(format, ...) \
 { \
@@ -76,21 +78,23 @@ if (!(cond)) \
 	break; \
 }
 
-/** Calculate condition and fail if false in DEBUG */
+/** Calculate condition configuration-independantly and fail if false in DEBUG */
 
 #define CCEnsure(cond) CCEnsureCustom(cond, "%s", #cond " failed")
 
-/** Calculate condition and fail with custom formatted message if false in DEBUG */
+/** Calculate condition configuration-independantly and fail with custom formatted message if false in DEBUG */
 
 #define CCEnsureCustom(cond, format, ...) \
 if (!(cond)) \
 CCUnreachableCustom(format, ##__VA_ARGS__)
 
-/** Calculate condition and fail if false in DEBUG, break in RELEASE */
+/** Calculate condition configuration-independantly and fail if false in DEBUG, break in RELEASE.
+ *  Should be used in do...while(false) loops. */
 
 #define CCEnsureElseBreak(cond) CCEnsureElseBreakCustom(cond, "%s", #cond " failed")
 
-/** Calculate condition and fail with custom formatted message if false in DEBUG, break in RELEASE. Use in do...while(false) loops */
+/** Calculate condition configuration-independantly and fail with custom formatted message if false in DEBUG, break in RELEASE.
+ *  Should be used in do...while(false) loops. */
 
 #define CCEnsureElseBreakCustom(cond, format, ...) \
 if (!(cond)) \

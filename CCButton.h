@@ -38,7 +38,7 @@ const int kCCButtonTouchPriority = -128;
 /** @{ */
 
 /** Composite UI button.
- *  Can be composed of any number of elements with programmable behavior */
+ *  Can be composed of any number of elements with programmable behavior. */
 
 class CCButton : public CCLayer
 {
@@ -81,7 +81,7 @@ private:
 };
 
 /** Composite UI toggle button.
- *  Can be composed of any number of elements with programmable behavior */
+ *  Can be composed of any number of elements with programmable behavior. */
 
 class CCButtonToggle : public CCButton
 {

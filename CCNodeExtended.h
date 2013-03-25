@@ -37,7 +37,8 @@ class CCRect;
 
 bool CCNodeIsVisibleRecursive(CCNode* pNode);
 
-/** Returns local axis-aligned bounding box which is unlike boundingBox() relative to node itself */
+/** Returns local axis-aligned bounding box which is unlike boundingBox() relative only to node itself.
+ *  Content size and anchor point are involved, position is not */
 
 CCRect CCNodeGetLocalBoundingBox(CCNode* pNode);
 

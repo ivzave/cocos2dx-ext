@@ -68,16 +68,16 @@ CCSize cczSub(const CCSize& tSize1, const CCSize& tSize2);
 /** Return vector normalized to given vector */
 CCSize cczNormalizeTo(const CCSize& tSize, const CCSize& tNorm);
 
-/** Return vector normalized to given vector */
+/** Return vector denormalized to given vector */
 CCSize cczDenormalizeTo(const CCSize& tSize, const CCSize& tNorm);
 
 /** Clamp vector between two vectors */
 CCSize cczClamp(const CCSize& tSize, const CCSize& tLimit1, const CCSize& tLimit2);
 
-/** Return minimal of two vectors */
+/** Return vector composed of minimal values of corresponding coordinates */
 CCSize cczMin(const CCSize& tSize1, const CCSize& tSize2);
 
-/** Return maximal of two vectors */
+/** Return vector composed of maximal values of corresponding coordinates */
 CCSize cczMax(const CCSize& tSize1, const CCSize& tSize2);
 
 /** @} */
