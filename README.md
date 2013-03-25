@@ -17,10 +17,12 @@ Project consists of several parts:
    * Nodes - Additional nodes and node-related extensions
    * XML - Object-oriented wrapper around libxml2 for use with Cocos2d-x
 
-Contact
+Links
 ---------------
 
-Author: Igor Zavorotkin <ivzave@gmail.com>
+Author: Igor Zavorotkin (<ivzave@gmail.com>)
+
+License: MIT
 
 Project home page: [http://github.com/ivzave/cocos2dx-ext](http://github.com/ivzave/cocos2dx-ext)
 
