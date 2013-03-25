@@ -1,6 +1,6 @@
 var NAVTREE =
 [
-  [ "Cocos2d-Ext", "index.html", [
+  [ "Cocos2dx-Ext", "index.html", [
     [ "Modules", "modules.html", "modules" ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
