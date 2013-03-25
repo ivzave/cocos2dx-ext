@@ -1,0 +1,26 @@
+var annotated =
+[
+    [ "CCButton", "d0/d22/class_c_c_button.html", "d0/d22/class_c_c_button" ],
+    [ "CCButtonToggle", "d2/ddc/class_c_c_button_toggle.html", "d2/ddc/class_c_c_button_toggle" ],
+    [ "CCDotNode", "df/d42/class_c_c_dot_node.html", "df/d42/class_c_c_dot_node" ],
+    [ "CCEmitter", "d9/d7f/class_c_c_emitter.html", "d9/d7f/class_c_c_emitter" ],
+    [ "CCForward", "da/d38/class_c_c_forward.html", "da/d38/class_c_c_forward" ],
+    [ "CCLineNode", "d4/d7f/class_c_c_line_node.html", "d4/d7f/class_c_c_line_node" ],
+    [ "CCNone", "df/de3/class_c_c_none.html", "df/de3/class_c_c_none" ],
+    [ "CCPlay", "dd/dcd/class_c_c_play.html", "dd/dcd/class_c_c_play" ],
+    [ "CCPointer", "d0/db1/class_c_c_pointer.html", "d0/db1/class_c_c_pointer" ],
+    [ "CCProgressBy", "da/d4a/class_c_c_progress_by.html", "da/d4a/class_c_c_progress_by" ],
+    [ "CCRectNode", "df/d31/class_c_c_rect_node.html", "df/d31/class_c_c_rect_node" ],
+    [ "CCRemove", "da/d8b/class_c_c_remove.html", "da/d8b/class_c_c_remove" ],
+    [ "CCReorder", "d1/d07/class_c_c_reorder.html", "d1/d07/class_c_c_reorder" ],
+    [ "CCRepeatDuration", "df/d9a/class_c_c_repeat_duration.html", "df/d9a/class_c_c_repeat_duration" ],
+    [ "CCScrollableLayer", "df/dfa/class_c_c_scrollable_layer.html", "df/dfa/class_c_c_scrollable_layer" ],
+    [ "CCSetParent", "d3/d6b/class_c_c_set_parent.html", "d3/d6b/class_c_c_set_parent" ],
+    [ "CCSetText", "d9/dce/class_c_c_set_text.html", "d9/dce/class_c_c_set_text" ],
+    [ "CCSetTexture", "d8/d23/class_c_c_set_texture.html", "d8/d23/class_c_c_set_texture" ],
+    [ "CCSubscription", "dd/d16/class_c_c_subscription.html", "dd/d16/class_c_c_subscription" ],
+    [ "CCTableWorker", "d0/d11/class_c_c_table_worker.html", "d0/d11/class_c_c_table_worker" ],
+    [ "CCXmlDocument", "de/df7/class_c_c_xml_document.html", "de/df7/class_c_c_xml_document" ],
+    [ "CCXmlNode", "d2/db6/class_c_c_xml_node.html", "d2/db6/class_c_c_xml_node" ],
+    [ "CCXmlSchema", "da/da7/class_c_c_xml_schema.html", "da/da7/class_c_c_xml_schema" ]
+];
