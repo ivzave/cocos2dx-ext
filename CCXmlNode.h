@@ -33,6 +33,9 @@ class CCXmlDocument;
 
 struct CCXmlNodeData;
 
+/** @defgroup xml XML */
+/** @{ */
+
 /** CCObject representing XML node */
 
 class CCXmlNode : public CCObject
@@ -131,5 +134,7 @@ NS_CC_END
 #define CCXML_FOREACH_CHILD(pNode, pChild) \
 if (cocos2d::CCXmlNode* __pParent = (pNode)) \
 	for(cocos2d::CCXmlNode* pChild = __pParent->getFirstChild(); pChild != NULL; pChild = pChild->getNextSibling())
+
+/** @} */
 
 #endif /* CCXMLNODE_H_ */

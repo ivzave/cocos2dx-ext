@@ -29,6 +29,9 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
+/** @addtogroup actions */
+/** @{ */
+
 /** Instant action which plays a sound effect using SimpleAudioEngine.
  *  Is a CCActionInstant because there's no way to get effect duration. */
 
@@ -45,6 +48,8 @@ public:
 private:
 	std::string m_tSample;
 };
+
+/** @} */
 
 NS_CC_END
 

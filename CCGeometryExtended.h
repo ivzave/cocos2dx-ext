@@ -27,6 +27,9 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
+/** @defgroup geometry Geometry */
+/** @{ */
+
 /** @name CCPoint related extensions */
 /** @{ */
 
@@ -90,6 +93,8 @@ CCRect CCRectMakeWithOriginAndSize(const CCPoint& tOrigin, const CCSize& tSize);
 
 /** Return center point of rectangle */
 CCPoint CCRectGetCenter(const CCRect& tRect);
+
+/** @} */
 
 /** @} */
 

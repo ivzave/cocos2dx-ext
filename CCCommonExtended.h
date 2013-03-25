@@ -46,7 +46,7 @@ if (!(cond)) \
 #endif /* COCOS2D_DEBUG */
 
 
-/** @name Error handling */
+/** @defgroup error_handling Error handling */
 /** @{ */
 
 /** Unconditional failure in DEBUG */
@@ -108,7 +108,7 @@ CCUnreachableCustom(format, ##__VA_ARGS__)
 
 /** @} */
 
-/** @name Improved iteration macros for collections */
+/** @defgroup collections Collections */
 /** @{ */
 
 /** Improved iteration macro for CCArray which does declare pointer to provided type in a block */
@@ -132,7 +132,7 @@ if (cocos2d::CCDictElement* pElement = NULL) ; else \
 CCDICT_FOREACH_ELEM(pDict, __pElement) \
 	if (ObjectType pObject = (ObjectType)__pElement->getObject())
 
-/* Improved iteration macro for CCDictionary which does declare string key and pointer to provided type in a block */
+/** Improved iteration macro for CCDictionary which does declare string key and pointer to provided type in a block */
 
 #define CCDICT_FOREACH_STR_KEY_AND_OBJECT(pDict, tKey, ObjectType, pObject) \
 CCDICT_FOREACH_OBJECT(pDict, ObjectType, pObject) \

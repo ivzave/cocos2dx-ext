@@ -30,6 +30,9 @@ NS_CC_BEGIN
 class CCNode;
 class CCRect;
 
+/** @addtogroup nodes */
+/** @{ */
+
 /** Returns true if node is visible as well as all of its parents */
 
 bool CCNodeIsVisibleRecursive(CCNode* pNode);
@@ -37,6 +40,8 @@ bool CCNodeIsVisibleRecursive(CCNode* pNode);
 /** Returns local axis-aligned bounding box which is unlike boundingBox() relative to node itself */
 
 CCRect CCNodeGetLocalBoundingBox(CCNode* pNode);
+
+/** @} */
 
 NS_CC_END
 

@@ -28,6 +28,9 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
+/** @defgroup nodes Nodes */
+/** @{ */
+
 /** Node representing solid or empty colour rectangle */
 
 class CCRectNode : public CCNodeRGBA
@@ -70,5 +73,7 @@ public:
 };
 
 NS_CC_END
+
+/** @} */
 
 #endif /* CCPRIMITIVENODES_H_ */

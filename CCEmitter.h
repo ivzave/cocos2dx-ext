@@ -29,6 +29,9 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
+/** @defgroup utility Utility */
+/** @{ */
+
 /** Observer pattern implementation for Cocos2d-x. Should be used as part of observable objects */
 
 class CCEmitter : public CCObject
@@ -60,6 +63,8 @@ private:
 	CCObject* m_pListener;
 	SEL_CallFuncO m_pCallback;
 };
+
+/** @} */
 
 NS_CC_END
 

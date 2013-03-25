@@ -27,6 +27,9 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
+/** @defgroup smartptr Smart pointer */
+/** @{ */
+
 /** Smart pointer class for use with Cocos2d-x */
 
 template<typename T>
@@ -189,5 +192,7 @@ protected: \
 public: \
 	virtual varType* get##funName() const { return varName; } \
 	virtual void set##funName(varType* var) { varName = var; }
+
+/** @} */
 
 #endif /* CCPOINTER_H_ */

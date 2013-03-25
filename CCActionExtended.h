@@ -30,7 +30,11 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
-/** Action that does nothing. Just a stub */
+/** @defgroup actions Actions */
+/** @{ */
+
+/** Instant action that does nothing.
+ *  Just a stub. */
 
 class CCNone : public CCActionInstant
 {
@@ -40,7 +44,7 @@ public:
 	virtual CCObject* copyWithZone(CCZone* pZone);
 };
 
-/** Action that removes the node from its parent (with cleanup) */
+/** Instant action that removes the node from its parent (with cleanup) */
 
 class CCRemove : public CCActionInstant
 {
@@ -51,7 +55,7 @@ public:
 	virtual CCObject* copyWithZone(CCZone* pZone);
 };
 
-/** Action that modifies the Z-order of the node */
+/** Instant action that modifies the Z-order of the node */
 
 class CCReorder : public CCActionInstant
 {
@@ -67,7 +71,8 @@ private:
 	int m_nZOrder;
 };
 
-/** Action that changes nodes parent. Modifies the position so the node won't move */
+/** Instant action that changes nodes parent.
+ *  Modifies the position so the node won't move. */
 
 class CCSetParent : public CCActionInstant
 {
@@ -83,7 +88,7 @@ private:
 	CCNode* m_pParent;
 };
 
-/** Action that changes the progress of CCProgressTimer by given value */
+/** Instant action that changes the progress of CCProgressTimer by given value */
 
 class CCProgressBy : public CCActionInterval
 {
@@ -100,7 +105,8 @@ private:
 	float m_fAddedPercentage;
 };
 
-/** Action that sets the texture of the node. Requires CCTextureProtocol */
+/** Instant action that sets the texture of the node.
+ *  Requires CCTextureProtocol. */
 
 class CCSetTexture : public CCActionInstant
 {
@@ -116,7 +122,8 @@ private:
 	std::string m_tTextureName;
 };
 
-/** Action that changes the text label of the node. Requires CCLabelProtocol */
+/** Instant action that changes the text label of the node.
+ *  Requires CCLabelProtocol. */
 
 class CCSetText : public CCActionInstant
 {
@@ -173,6 +180,8 @@ private:
 	CCPointer<CCFiniteTimeAction> m_pAction;
 	float m_fStage;
 };
+
+/** @} */
 
 NS_CC_END
 

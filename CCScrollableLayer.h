@@ -37,6 +37,9 @@ enum CCScrollableLayerBinding
 	kCCScrollableLayerBindingUpperRight
 };
 
+/** @addtogroup nodes */
+/** @{ */
+
 /** Node representing area where scrolling can appear limited to the size of underlying layer */
 
 class CCScrollableLayer : public CCLayer
@@ -66,6 +69,8 @@ private:
 	bool m_bScrolling;
 	CCPoint m_tBeginTouchPoint;
 };
+
+/** @} */
 
 NS_CC_END
 

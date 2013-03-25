@@ -30,6 +30,9 @@ NS_CC_BEGIN
 
 class CCNode;
 
+/** @addtogroup utility */
+/** @{ */
+
 /** Class to arrange nodes in table-like style */
 
 class CCTableWorker : public CCObject
@@ -59,6 +62,8 @@ private:
 
 	CCArray m_tNodes;
 };
+
+/** @} */
 
 NS_CC_END
 
