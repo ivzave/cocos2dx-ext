@@ -27,7 +27,8 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
-/** @defgroup smartptr Smart pointer */
+/** @defgroup smartptr Smart pointer
+ *  Smart pointer class for use with Cocos2d-x */
 /** @{ */
 
 /** Smart pointer class for use with Cocos2d-x */

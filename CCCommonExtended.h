@@ -46,7 +46,8 @@ if (!(cond)) \
 #endif /* COCOS2D_DEBUG */
 
 
-/** @defgroup error_handling Error handling */
+/** @defgroup error_handling Error handling
+ *  Improved error handling functionality to replace CCAssert */
 /** @{ */
 
 /** Unconditional failure in DEBUG */
@@ -112,7 +113,8 @@ CCUnreachableCustom(format, ##__VA_ARGS__)
 
 /** @} */
 
-/** @defgroup collections Collections */
+/** @defgroup collections Collections
+ *  Iteration macros to replace original ones */
 /** @{ */
 
 /** Improved iteration macro for CCArray which does declare pointer to provided type in a block */

@@ -27,7 +27,8 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
-/** @defgroup geometry Geometry */
+/** @defgroup geometry Geometry
+ *  Geometry extensions for CCPoint, CCSize and CCRect */
 /** @{ */
 
 /** @name CCPoint related extensions */

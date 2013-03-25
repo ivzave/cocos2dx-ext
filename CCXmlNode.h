@@ -33,7 +33,8 @@ class CCXmlDocument;
 
 struct CCXmlNodeData;
 
-/** @defgroup xml XML */
+/** @defgroup xml XML
+ *  Object-oriented wrapper around libxml2 for use with Cocos2d-x */
 /** @{ */
 
 /** CCObject representing XML node */

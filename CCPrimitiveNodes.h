@@ -28,7 +28,8 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
-/** @defgroup nodes Nodes */
+/** @defgroup nodes Nodes
+ *  Additional nodes and node-related extensions */
 /** @{ */
 
 /** Node representing solid or empty colour rectangle */

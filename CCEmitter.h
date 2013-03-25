@@ -29,7 +29,8 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
-/** @defgroup utility Utility */
+/** @defgroup utility Utility
+ *  Other usable stuff */
 /** @{ */
 
 /** Observer pattern implementation for Cocos2d-x. Should be used as part of observable objects */

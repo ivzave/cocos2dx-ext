@@ -30,7 +30,8 @@ THE SOFTWARE.
 
 NS_CC_BEGIN
 
-/** @defgroup actions Actions */
+/** @defgroup actions Actions
+ *  Additional actions */
 /** @{ */
 
 /** Instant action that does nothing.
